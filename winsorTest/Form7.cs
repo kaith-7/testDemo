@@ -22,6 +22,7 @@ namespace winsorTest
         private readonly WindsorContainer _container;
         private void Form7_Load(object sender, EventArgs e)
         {
+            string str = "test";
            // _container = new Castle.Windsor.WindsorContainer();
             _container.Register(Component.For<Class1>().ImplementedBy<Class1>().LifestyleTransient ());
 
